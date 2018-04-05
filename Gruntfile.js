@@ -7,8 +7,8 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['JavaScript/**/*.js'],
-        dest: 'dist/<%= pkg.name %>.js'
+        src: ['JavaScript/src/*.js'],
+        dest: 'JavaScript/dist/<%= pkg.name %>.js'
       }
     },
     uglify: {
@@ -17,15 +17,15 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'JavaScript/dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
     qunit: {
-      files: ['test/**/*.html']
+      files: ['JavaScript/test/*.html']
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'JavaScript/src/*.js', 'JavaScript/test/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
