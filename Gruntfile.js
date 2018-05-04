@@ -39,7 +39,19 @@ module.exports = function(grunt) {
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'qunit']
-    }
+    },
+	postcss: {
+		options: {
+		  processors: [
+			require('pixrem')(), 
+			require('autoprefixer')({browsers: 'last 8 versions'}), 
+			require('cssnano')() 
+		  ]
+		},
+		dist: {
+		  src: 'css/*.css'
+		}
+	}
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -47,9 +59,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'postcss']);
 
 };
