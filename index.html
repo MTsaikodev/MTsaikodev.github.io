@@ -5,55 +5,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MT Web Services</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link href="CSS/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header>
-    <div class="page-header">
-      <img src="" alt="MT Web Services logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-controls="navBarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">
+            <img src="Images/LogoTestUniform.png" alt="MT Web Services logo">
+          </span>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="navBarCollapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About<span class="sr-only">(current)</span></a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>This is the about section.</p>
-  </section>
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>This is the about section.</p>
+    </section>
 
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-    <p>This is the portfolio section.</p>
-    <a href="#">
-      <img class="portfolioImage" src="Images/blueberries.jpg" alt="Coffee Shop Website">
-    </a>
-    <a href="#">
-      <img class="portfolioImage" src="Images/blueberries.jpg" alt="Iwata Tribute Page">
-    </a>
-  </section>
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <p>This is the portfolio section.</p>
+      <a href="#">
+        <img class="portfolioImage" src="Images/blueberries.jpg" alt="Coffee Shop Website">
+      </a>
+      <a href="#">
+        <img class="portfolioImage" src="Images/blueberries.jpg" alt="Iwata Tribute Page">
+      </a>
+    </section>
 
-  <section id="cv" class="cv">
-    <h2>CV</h2>
-    <p>This is the CV section</p>
-  </section>
+    <section id="cv" class="cv">
+      <h2>CV</h2>
+      <p>This is the CV section</p>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>This is the contact section</p>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>This is the contact section</p>
+    </section>
 
-  <footer>
-    <p>This is the footer</p>
-  </footer>
+    <footer>
+      <p>This is the footer</p>
+    </footer>
+  </div>
 </body>
 
 </html>
