@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-  padding-top: 65px;
+  padding-top: 30px;
 }
 
 .navbar-default {
@@ -25,12 +25,19 @@ body {
 }
 
 .about {
-  height: 400px;
-  width: 400px;
-  border-radius: 25%;
-  background: #036;
+  background-image: url("../Images/AboutBackground.png");
+  height: 700px;
+}
+
+.portfolio {
+  display: inline;
 }
 
 .cv {
   background-color: #525250;
+}
+
+.footer {
+  background-color: #5cd8ff;
+  height: 45px;
 }
