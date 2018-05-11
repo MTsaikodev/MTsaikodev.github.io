@@ -24,6 +24,10 @@ body {
   padding: 0px;
 }
 
+.alignCenter {
+  text-align: center;
+}
+
 .about {
   background-image: url("../Images/AboutBackground.png");
   height: 700px;
