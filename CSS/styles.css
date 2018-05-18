@@ -158,6 +158,9 @@ footer .container .vertical-align {
     display: block;
     align-items: center;
   }
+  .cvTextSpacing {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
