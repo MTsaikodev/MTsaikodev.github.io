@@ -15,6 +15,10 @@ p {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 a:hover {
   text-decoration: none;
   display: inline;
@@ -122,6 +126,10 @@ footer .container .vertical-align {
   margin-bottom: 20px;
 }
 
+.bottomMargin {
+  margin-bottom: 15px;
+}
+
 .footer {
   background-color: #5cd8ff;
 }
@@ -160,6 +168,9 @@ footer .container .vertical-align {
   }
   .cvTextSpacing {
     margin-bottom: 10px;
+  }
+  .contactCenterText {
+    text-align: center;
   }
 }
 
