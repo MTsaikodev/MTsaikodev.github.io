@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'WeblySleek';
+  src: url("/Fonts/weblysleekuisb.eot");
+  src: url("/Fonts/weblysleekuisb?#iefix") format("embedded-opentype"), url("/Fonts/weblysleekuisb.woff") format("woff"), url("/Fonts/weblysleekuisb.ttf") format("truetype"), url("/Fonts/weblysleekuisb.svg#WeblySleek") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-size: 20px;
   font-family: Verdana, sans-serif;
@@ -8,7 +16,7 @@ h1 {
 
 body {
   padding-top: 30px;
-  font-family: Bahnschrift, sans-serif;
+  font-family: WeblySleek, sans-serif;
 }
 
 p {
